@@ -11081,3 +11081,7 @@ header.masthead h1, header.masthead .h1 {
 .contact-item:hover h3::after {
   width: 100%;
 }
+
+h2 {
+  color: #7b5187;
+}
