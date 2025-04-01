@@ -11017,3 +11017,67 @@ header.masthead h1, header.masthead .h1 {
   opacity: 1;
 }
 
+.hover-effect {
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hover-effect:hover {
+  color: #7b5187; /* 主题紫色 */
+  transform: scale(1.05);
+}
+
+.hover-effect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #7b5187;
+  transition: width 0.3s ease;
+}
+
+.hover-effect:hover::after {
+  width: 100%;
+}
+
+.contact-item {
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.contact-icon {
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.1); /* 图标轻微放大 */
+}
+
+.contact-item h3 {
+  transition: color 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+/* 下划线动画 */
+.contact-item h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #7b5187;
+  transition: width 0.3s ease;
+}
+
+.contact-item:hover h3 {
+  color: #7b5187;
+}
+
+.contact-item:hover h3::after {
+  width: 100%;
+}
